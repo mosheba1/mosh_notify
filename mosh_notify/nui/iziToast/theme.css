@@ -1,0 +1,99 @@
+.iziToast {
+    border-radius: 10px;
+}
+
+.iziToast-theme-dark {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(10, 6, 0, 0.75);
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-top-left-radius: 10px;
+}
+
+
+.iziToast-theme-darkred {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(10, 6, 0, 0.75);
+    background: rgba(212, 0, 0, 0.8) !important;
+    border-top-left-radius: 10px;
+}
+
+.iziToast-theme-success {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(10, 6, 0, 0.75);
+    background: rgba(18, 212, 0, 0.8) !important;
+    border-top-left-radius: 10px;
+}
+
+.iziToast-theme-light {
+    -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.75);
+    background: rgba(209, 209, 209, 0.8) !important;
+    border-top-left-radius: 10px;
+}
+
+.iziToast-theme-dark .iziToast-message {
+    font-weight: 500 !important;
+}
+
+.iziToast-color-blue {
+    border: none !important;
+    border-top: 4px solid rgb(0, 0, 0) !important;
+}
+
+.iziToast > .iziToast-progressbar {
+    background: rgb(255, 255, 255)
+}
+
+.iziToast > .iziToast-progressbar > div {
+    height: 4px;
+    background: rgba(9, 255, 0, 0.747);
+}
+
+
+#button {
+    background: #222;
+    height: 50px;
+    min-width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: #eee;
+    font-size: 40px;
+    font-family: 'Cookie', cursive;
+    position: relative;
+    transition: 1s;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-top: 5px;
+  }
+  
+  #button #circle {
+    width: 5px;
+    height: 5px;
+    background: transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    overflow: hidden;
+    transition: 500ms;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+       -khtml-user-select: none;
+         -moz-user-select: none;
+          -ms-user-select: none;
+              user-select: none;
+  }
+  
+  #button:hover {
+    background: transparent;
+  }
+  
+  #button:hover #circle {
+    height: 50px;
+    width: 150px;
+    left: 0;
+    border-radius: 0;
+    border-bottom: 2px solid #eee;
+  }
